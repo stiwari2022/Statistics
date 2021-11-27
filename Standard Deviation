@@ -1,0 +1,6 @@
+def Standard_Deviation(Chubstering):
+  xed=len(Chubstering)
+  Mean=sum(Chubstering)/xed
+  v=sum((xor-Mean)**2 for xor in Chubstering)/xed
+  Dev=v**0.5
+  return Dev
