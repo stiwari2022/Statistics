@@ -70,7 +70,7 @@ def Polynomial_Regression_x_and_y(Chubstering_x, Chubstering_y):
       zeed=zeed+1
   Removing_Outliers(Chubstering_y, Chubstering_y)
   def Polynomial_Regression(Chubstering_x, Chubstering_y):
-    print ("Types: S (Straight/Linear), G (Generaly Specific), K (Specific)")
+    print ("Types: S (Straight/Linear), G (Generaly Specific), V (Very Specific)")
     Xep=input("\nEnter one type of line: ")
     Yep=0
     while (Yep==0):
@@ -78,13 +78,13 @@ def Polynomial_Regression_x_and_y(Chubstering_x, Chubstering_y):
         Yep=1
       elif (Xep=="G"):
         Yep=3
-      elif (Xep=="K"):
+      elif (Xep=="V"):
         Yep=5
       elif (Xep=="s"):
         Yep=1
       elif (Xep=="g"):
         Yep=3
-      elif (Xep=="k"):
+      elif (Xep=="v"):
         Yep=5
       else:
         Xep=input("\nEnter one type of line: ")
