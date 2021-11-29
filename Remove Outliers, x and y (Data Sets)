@@ -35,6 +35,4 @@ def Removing_Outliers(Chubstering_x, Chubstering_y):
       Chubstering_x.remove(yeed)
       Chubstering_y.remove(yeeed)
     zeed=zeed+1
-  print (Chubstering_x)
-  print (Chubstering_y)
 Removing_Outliers(Income, LE)
