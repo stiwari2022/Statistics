@@ -18,7 +18,7 @@ def Polynomial_Regression(Chubstering):
     elif (Xep=="K"):
       Yep=5
     elif (Xep=="V"):
-      Yep=10
+      Yep=7.5
     elif (Xep=="s"):
       Yep=1
     elif (Xep=="g"):
@@ -26,7 +26,7 @@ def Polynomial_Regression(Chubstering):
     elif (Xep=="k"):
       Yep=5
     elif (Xep=="v"):
-      Yep=10
+      Yep=7.5
     else:
       Xep=input("\nTry again\nEnter one type of line: ")
   x=len(Chubstering)
