@@ -25,7 +25,7 @@ def Removing_Outliers(Chubstering):
     return Dev
   Median=Medianing(Chubstering)
   SD=Standard_Deviation(Chubstering)
-  zeed=1
+  zeed=0
   xeed=len(Chubstering)
   beed=Median+SD*2
   ceed=Median-SD*2
