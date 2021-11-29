@@ -1,1 +1,31 @@
-https://colab.research.google.com/drive/1uVCdaKH-jV30L2SQ9NGi_60NUMUL30SF#scrollTo=E1m7EyYEe6Dc
+Lisp=[1, 3, 5, 7]
+
+
+
+
+
+
+def Recency_Bias(Chubstering):
+  keepin=int(input("Enter the length of the first index:"))
+  keep=keepin-1
+  jeep=len(Chubstering)-1
+  yeep=len(Chubstering)
+  weep=0
+  Chubsteringi=[]
+  while (0<=jeep):
+    xeep=Chubstering[jeep]
+    yeep=len(Chubstering)
+    yeep=yeep-weep
+    while (0<yeep+keep):
+      Chubsteringi.append(xeep)
+      yeep=yeep-1
+    jeep=jeep-1
+    weep=weep+1
+  Chubstering.clear()
+  geep=len(Chubsteringi)
+  meep=0
+  while (meep<geep):
+    ceep=Chubsteringi[meep]
+    Chubstering.append(ceep)
+    meep=meep+1
+Recency_Bias(Lisp)
