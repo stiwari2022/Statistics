@@ -1,0 +1,44 @@
+Lisp=[1, 3, 5, 7, 10, 8, 7.5, 7.8, 7.7, 7.5, 7.6, 8.5, 10, 11.5, 13]
+
+
+
+
+
+def Polynomial_Regression(Chubstering):
+  print ("Types: S (Straight/Linear), G (Generaly Specific), K (Specific), V (Verry Specific)")
+  Xep=input("\nEnter one type of line: ")
+  Yep=0
+  while (Yep==0):
+    if (Xep=="S"):
+      Yep=1
+    elif (Xep=="G"):
+      Yep=3
+    elif (Xep=="K"):
+      Yep=5
+    elif (Xep=="V"):
+      Yep=10
+    elif (Xep=="s"):
+      Yep=1
+    elif (Xep=="g"):
+      Yep=3
+    elif (Xep=="k"):
+      Yep=5
+    elif (Xep=="v"):
+      Yep=10
+    else:
+      print ("\nTry again")
+      Xep=input("Enter one type of line: ")
+  x=len(Chubstering)
+  Chubsteringing=[]
+  y=0
+  while (y<x):
+    y=y+1
+    Chubsteringing.append(y)
+  X=numpy.linspace(1, x, 1000)
+  Y=numpy.poly1d(numpy.polyfit(Chubsteringing, Chubstering, Yep))
+  print ("\n\n")
+  import matplotlib.pyplot as plt
+  fig=plt.figure(figsize=(13, 5))
+  plt.scatter(Chubsteringing, Chubstering)
+  plt.plot(X, Y(X))
+Polynomial_Regression(Lisp)
