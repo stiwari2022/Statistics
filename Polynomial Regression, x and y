@@ -1,0 +1,94 @@
+Income=[6.18, 3.17, 43.58, 2.2, 4.06, 7.52, 2.82, 11.72, 11.68, 33.82, 1.11, 2.4, 3.11, 4.78]
+LE=[76.7, 69.4, 78.5, 71.5, 67.1, 75.7, 72.3, 72.7, 75, 84.2, 66.2, 71.1, 71.8, 75.3]
+def Polynomial_Regression_x_and_y(Chubstering_x, Chubstering_y):
+  def Removing_Outliers(Chubstering_x, Chubstering_y):
+    def Medianing(Chubstering_x):
+        feed=len(Chubstering_x)//2
+        return (Chubstering_x[feed]+Chubstering_x[~feed])/2
+    def Standard_Deviation(Chubstering_x):
+      need=len(Chubstering_x)
+      meed=Medianing(Chubstering_x)
+      deed=[(leed-meed)**2 for leed in Chubstering_x]
+      Variance=sum(deed)/need
+      Dev=Variance**0.5
+      return Dev
+    Median=Medianing(Chubstering_x)
+    SD=Standard_Deviation(Chubstering_x)
+    zeed=0
+    xeed=len(Chubstering_x)
+    beed=Median+SD*2
+    ceed=Median-SD*2
+    meep=len(Chubstering_x)-1
+    while (zeed<=xeed):
+      if (zeed==len(Chubstering_x)):
+        break
+      yeed=Chubstering_x[zeed-meep]
+      yeeed=Chubstering_y[zeed-meep]
+      if (yeed>beed):
+        Chubstering_x.remove(yeed)
+        Chubstering_y.remove(yeeed)
+      if (yeed<ceed):
+        Chubstering_x.remove(yeed)
+        Chubstering_y.remove(yeeed)
+      zeed=zeed+1
+  Removing_Outliers(Chubstering_x, Chubstering_y)
+  def Removing_Outliers(Chubstering_x, Chubstering_y):
+    def Medianing(Chubstering_y):
+        feed=len(Chubstering_y)//2
+        return (Chubstering_y[feed]+Chubstering_y[~feed])/2
+    def Standard_Deviation(Chubstering_y):
+      need=len(Chubstering_y)
+      meed=Medianing(Chubstering_y)
+      deed=[(leed-meed)**2 for leed in Chubstering_y]
+      Variance=sum(deed)/need
+      Dev=Variance**0.5
+      return Dev
+    Median=Medianing(Chubstering_y)
+    SD=Standard_Deviation(Chubstering_y)
+    zeed=0
+    xeed=len(Chubstering_y)
+    beed=Median+SD*2
+    ceed=Median-SD*2
+    meep=len(Chubstering_y)-1
+    while (zeed<=xeed):
+      if (zeed==len(Chubstering_y)):
+        break
+      yeed=Chubstering_y[zeed-meep]
+      yeeed=Chubstering_x[zeed-meep]
+      if (yeed>beed):
+        Chubstering_y.remove(yeed)
+        Chubstering_x.remove(yeeed)
+      if (yeed<ceed):
+        Chubstering_y.remove(yeed)
+        Chubstering_x.remove(yeeed)
+      zeed=zeed+1
+  Removing_Outliers(Chubstering_y, Chubstering_y)
+  def Polynomial_Regression(Chubstering_x, Chubstering_y):
+    print ("Types: S (Straight/Linear), G (Generaly Specific), K (Specific)")
+    Xep=input("\nEnter one type of line: ")
+    Yep=0
+    while (Yep==0):
+      if (Xep=="S"):
+        Yep=1
+      elif (Xep=="G"):
+        Yep=3
+      elif (Xep=="K"):
+        Yep=5
+      elif (Xep=="s"):
+        Yep=1
+      elif (Xep=="g"):
+        Yep=3
+      elif (Xep=="k"):
+        Yep=5
+      else:
+        Xep=input("\nEnter one type of line: ")
+    xeep=len(Chubstering_x)
+    X=numpy.linspace(1, xeep, 1000)
+    Y=numpy.poly1d(numpy.polyfit(Chubstering_x, Chubstering_y, Yep))
+    print ("\n\n")
+    import matplotlib.pyplot as plt
+    fig=plt.figure(figsize=(13, 5))
+    plt.scatter(Chubstering_x, Chubstering_y)
+    plt.plot(X, Y(X))
+  Polynomial_Regression(Chubstering_x, Chubstering_y)
+Polynomial_Regression_x_and_y(Income, LE)
