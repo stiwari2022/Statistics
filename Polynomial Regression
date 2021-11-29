@@ -7,7 +7,7 @@ Lisp=[1, 3, 5, 7, 10, 8, 7.5, 7.8, 7.7, 7.5, 7.6, 8.5, 10, 11.5, 13]
 
 
 def Polynomial_Regression(Chubstering):
-  print ("Types: S (Straight/Linear), G (Generaly Specific), K (Specific)")
+  print ("Types: S (Straight/Linear), G (Generaly Specific), V (Very Specific)")
   Xep=input("\nEnter one type of line: ")
   Yep=0
   while (Yep==0):
@@ -15,13 +15,13 @@ def Polynomial_Regression(Chubstering):
       Yep=1
     elif (Xep=="G"):
       Yep=3
-    elif (Xep=="K"):
+    elif (Xep=="V"):
       Yep=5
     elif (Xep=="s"):
       Yep=1
     elif (Xep=="g"):
       Yep=3
-    elif (Xep=="k"):
+    elif (Xep=="v"):
       Yep=5
     else:
       Xep=input("\nTry again\nEnter one type of line: ")
