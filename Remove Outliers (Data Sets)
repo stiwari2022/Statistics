@@ -30,15 +30,13 @@ def Removing_Outliers(Chubstering):
   beed=Median+SD*2
   ceed=Median-SD*2
   deed=Chubstering[0]
-  while (zeed<xeed):
-    yeed=Chubstering[zeed]
+  while (zeed<=xeed):
+    if (zeed==len(Chubstering)):
+      break
+    yeed=Chubstering[zeed-1]
     if (yeed>beed):
       Chubstering.remove(yeed)
     if (yeed<ceed):
       Chubstering.remove(yeed)
     zeed=zeed+1
-  if (deed>beed):
-    Chubstering.remove(deed)
-  if (deed<ceed):
-    Chubstering.remove(deed)
 Removing_Outliers(Lisp)
