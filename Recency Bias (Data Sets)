@@ -6,7 +6,7 @@ Lisp=[1, 3, 5, 7]
 
 
 def Recency_Bias(Chubstering):
-  keepin=int(input("Enter the length of the first index:"))
+  keepin=int(input("Enter the length of the first index: "))
   keep=keepin-1
   jeep=len(Chubstering)-1
   yeep=len(Chubstering)
