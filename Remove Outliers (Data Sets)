@@ -4,6 +4,8 @@ Lisp=[1, 3, 5, 7, 100]
 
 
 
+
+
 def Removing_Outliers(Chubstering):
   def Bubble_Sort(Chubstering):
     for Chubning in range(len(Chubstering)-1,0,-1):
@@ -29,11 +31,11 @@ def Removing_Outliers(Chubstering):
   xeed=len(Chubstering)
   beed=Median+SD*2
   ceed=Median-SD*2
-  deed=Chubstering[0]
+  meep=len(Chubstering)-1
   while (zeed<=xeed):
     if (zeed==len(Chubstering)):
       break
-    yeed=Chubstering[zeed-1]
+    yeed=Chubstering[zeed-meep]
     if (yeed>beed):
       Chubstering.remove(yeed)
     if (yeed<ceed):
