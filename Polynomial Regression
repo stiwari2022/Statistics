@@ -31,7 +31,7 @@ def Polynomial_Regression(Chubstering):
   while (y<x):
     y=y+1
     Chubsteringing.append(y)
-  X=numpy.linspace(1, x, 1000)
+  X=numpy.linspace(1, x, 250)
   Y=numpy.poly1d(numpy.polyfit(Chubsteringing, Chubstering, Yep))
   print ("\n\n")
   import matplotlib.pyplot as plt
