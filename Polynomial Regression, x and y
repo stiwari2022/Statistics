@@ -89,7 +89,7 @@ def Polynomial_Regression_x_and_y(Chubstering_x, Chubstering_y):
       else:
         Xep=input("\nEnter one type of line: ")
     xeep=len(Chubstering_x)
-    X=numpy.linspace(1, xeep, 1000)
+    X=numpy.linspace(1, xeep, 250)
     Y=numpy.poly1d(numpy.polyfit(Chubstering_x, Chubstering_y, Yep))
     print ("\n\n")
     import matplotlib.pyplot as plt
