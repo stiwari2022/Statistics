@@ -1,9 +1,9 @@
+import numpy
+import matplotlib.pyplot as plt
+
+
 Income=[6.18, 3.17, 43.58, 2.2, 4.06, 7.52, 2.82, 11.72, 11.68, 33.82, 1.11, 2.4, 3.11, 4.78]
 LE=[76.7, 69.4, 78.5, 71.5, 67.1, 75.7, 72.3, 72.7, 75, 84.2, 66.2, 71.1, 71.8, 75.3]
-
-
-
-
 
 
 def Polynomial_Regression_x_and_y(Chubstering_x, Chubstering_y):
