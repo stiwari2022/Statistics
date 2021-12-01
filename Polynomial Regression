@@ -10,18 +10,22 @@ def Polynomial_Regression(Chubstering):
   Xep=input("\nEnter one type of line: ")
   Yep=0
   while (Yep==0):
-    if (Xep=="S"):
+    if (Xep=="L"):
       Yep=1
     elif (Xep=="G"):
       Yep=3
-    elif (Xep=="V"):
+    elif (Xep=="S"):
       Yep=5
-    elif (Xep=="s"):
+    elif (Xep=="V"):
+      Yep=10
+    elif (Xep=="l"):
       Yep=1
     elif (Xep=="g"):
       Yep=3
-    elif (Xep=="v"):
+    elif (Xep=="s"):
       Yep=5
+    elif (Xep==v):
+      Yep=10
     else:
       Xep=input("\nTry again\nEnter one type of line: ")
   x=len(Chubstering)
