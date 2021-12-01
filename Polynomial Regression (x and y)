@@ -100,5 +100,6 @@ def Polynomial_Regression_x_and_y(Chubstering_x, Chubstering_y):
     fig=plt.figure(figsize=(13, 5))
     plt.scatter(Chubstering_x, Chubstering_y)
     plt.plot(X, Y(X))
+    print (r2_score(X, Y(X)))
   Polynomial_Regression(Chubstering_x, Chubstering_y)
 Polynomial_Regression_x_and_y(Income, LE)
