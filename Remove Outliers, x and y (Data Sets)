@@ -9,19 +9,19 @@ def Removing_Outliers(Chubstering_x, Chubstering_y):
   def Medianing(Chubstering_x):
       feed=len(Chubstering_x)//2
       return (Chubstering_x[feed]+Chubstering_x[~feed])/2
-  def Standard_Deviation(Chubstering_x):
+  def IQR_Standard_Deviation(Chubstering_x):
     need=len(Chubstering_x)
     meed=Medianing(Chubstering_x)
     deed=[(leed-meed)**2 for leed in Chubstering_x]
     Variance=sum(deed)/need
-    Dev=Variance**0.5
-    return Dev
+    iDev=Variance**0.5
+    return iDev
   Median=Medianing(Chubstering_x)
-  SD=Standard_Deviation(Chubstering_x)
+  iSD=IQR_Standard_Deviation(Chubstering_x)
   zeed=0
   xeed=len(Chubstering_x)
-  beed=Median+SD*2
-  ceed=Median-SD*2
+  beed=Median+iSD*2
+  ceed=Median-iSD*2
   meep=len(Chubstering_x)-1
   while (zeed<=xeed):
     if (zeed==len(Chubstering_x)):
