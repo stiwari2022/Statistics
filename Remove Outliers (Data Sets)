@@ -21,8 +21,8 @@ def Removing_Outliers(Chubstering):
   iSD=IQR_Standard_Deviation(Chubstering)
   zeed=0
   xeed=len(Chubstering)
-  beed=Median+SD*2
-  ceed=Median-SD*2
+  beed=Median+iSD*2
+  ceed=Median-iSD*2
   meep=len(Chubstering)-1
   while (zeed<=xeed):
     if (zeed==len(Chubstering)):
