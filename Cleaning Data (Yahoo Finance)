@@ -1,5 +1,3 @@
-import random
-import matplotlib.pyplot as plt
 def Clean_and_Data_Yahoo_Finance_File(Mere_Nam_Nam, Humhogia):
   def Clean_and_Data_Yahoo_Finance_File_In_Loop(If_Loop):
     global Git_Chub
