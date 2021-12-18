@@ -59,10 +59,9 @@ def Clean_and_Data_Yahoo_Finance_File(Mere_Nam_Nam, Humhogia):
         Itdex=Itdex+1
       a=L[0]
       b=L[1]
-      c=b/a
-      d=c-1
-      e=d*100
-      GitChub.append(e)
+      c=(b/a)-1
+      d=c*100
+      GitChub.append(d)
       Index=Index+1
   Clean_and_Data_Yahoo_Finance_File_In_Loop(Humhogia)
   def Translate_Git_Chub_to_Var(Break_And_Continue):
