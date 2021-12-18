@@ -61,3 +61,4 @@ def Clean_and_Data_Yahoo_Finance_File(x):
 		GitChub.append(e)
 		Index=Index+1
 Clean_and_Data_Yahoo_Finance_File("Apple_Stock_Data.txt")
+print (GitChub)
