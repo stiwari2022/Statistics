@@ -1,0 +1,35 @@
+def File_Builder(Final_File, First_File, Second_File):
+	Data=open(First_File)
+	b=Data.readlines()
+	abc_1=[]
+	c=0
+	for a in b:
+		g=("{}".format(a.strip()))
+		abc_1.append(g)
+		c=c+1
+	Data.close
+	Data=open(Second_File)
+	b=Data.readlines()
+	abc_2=[]
+	c=0
+	for a in b:
+		g=("{}".format(a.strip()))
+		abc_2.append(g)
+		c=c+1
+	Data.close
+	Data=open(Final_File, "w")
+	Len_abc_1=len(abc_1)
+	Len_abc_2=len(abc_2)
+	zed=min(Len_abc_1, Len_abc_2)
+	fed=0
+	while (fed<zed):
+		ABC_1=abc_1[fed]
+		ABC_2=abc_2[fed]
+		ged=("{} {}".format(ABC_1, ABC_2))
+		Data.write(ged)
+		if (fed==(zed-1)):
+			break
+		Data.write("\n")
+		fed=fed+1
+	Data.close
+File_Builder("Apple_Stock_Data.txt", "AP1.txt", "AP2.txt")
