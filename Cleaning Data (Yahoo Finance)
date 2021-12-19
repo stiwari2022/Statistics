@@ -1,73 +1,60 @@
-def Clean_and_Data_Yahoo_Finance_File(Mere_Nam_Nam, Humhogia):
-  def Clean_and_Data_Yahoo_Finance_File_In_Loop(If_Loop):
-    global Git_Chub
-    Break_And_Continue=[]
-    Data=open(If_Loop)
-    Content=Data.read()
-    Line=Data.readlines()
-    CL=Content.split("\n")
-    x=0
-    y=len(CL)
-    b=[]
-    while (x<y):
-      In_Element=CL[x]
-      CLS=In_Element.split()
-      xx=0
-      yy=len(CLS)
-      while (xx<yy):
-        yeet=CLS[xx]
-        CLSS=list(yeet)
-        xxx=0
-        yyy=len(CLSS)
-        while (xxx<yyy):
-          weet=CLSS[xxx]
-          if weet=="D":
-            b.append(x)
-          xxx=xxx+1
-        xx=xx+1
-      x=x+1
-    c=len(b)
-    d=0
-    while (d<c):
-      bd=b[d]
-      v=bd-d
-      m=CL[v]
-      CL.remove(m)
-      d=d+1
-    Dset=[]
-    for SR in CL:
-      Dsets=SR.replace("\t", " ")
-      Dset.append(Dsets)
-    k=0
-    l=len(Dset)
-    le=l-1
-    Index=0
-    Inidex=len(Dset)
-    GitChub=[]
-    while (Index<Inidex):
-      L=[]
-      Itdex=0
-      Goat=Dset[Index]
-      Goating=Goat.split()
-      l_Goating=len(Goating)
-      while (Itdex<l_Goating):
-        L_Goating=Goating[Itdex]
-        Lu_Goating=float(L_Goating)
-        L.append(Lu_Goating)
-        Itdex=Itdex+1
-      a=L[0]
-      b=L[1]
-      c=(b/a)-1
-      d=c*100
-      GitChub.append(d)
-      Index=Index+1
-  Clean_and_Data_Yahoo_Finance_File_In_Loop(Humhogia)
-  def Translate_Git_Chub_to_Var(Break_And_Continue):
-    Git_Var=0
-    Git_Chub_Len=len(GitChub)
-    while (Git_Var<Git_Chub_Len):
-      Git_Chub_Goat=GitChub[Git_Var]
-      Break_And_Continue.append(Git_Chub_Goat)
-      Git_Var=Git_Var+1
-  Translate_Git_Chub_to_Var(Mere_Nam_Nam)
-Clean_and_Data_Yahoo_Finance_File(Apple, "Apple_Stock_Data.txt")
+Apple=[]
+def Clean_and_Data_Yahoo_Finance_File_In_Loop(GitChub, If_Loop):
+  Break_And_Continue=[]
+  Data=open(If_Loop)
+  Content=Data.read()
+  Line=Data.readlines()
+  CL=Content.split("\n")
+  x=0
+  y=len(CL)
+  b=[]
+  while (x<y):
+    In_Element=CL[x]
+    CLS=In_Element.split()
+    xx=0
+    yy=len(CLS)
+    while (xx<yy):
+      yeet=CLS[xx]
+      CLSS=list(yeet)
+      xxx=0
+      yyy=len(CLSS)
+      while (xxx<yyy):
+        weet=CLSS[xxx]
+        if weet=="D":
+          b.append(x)
+        xxx=xxx+1
+      xx=xx+1
+    x=x+1
+  c=len(b)
+  d=0
+  while (d<c):
+    bd=b[d]
+    v=bd-d
+    m=CL[v]
+    CL.remove(m)
+    d=d+1
+  Dset=[]
+  for SR in CL:
+    Dsets=SR.replace("\t", " ")
+    Dset.append(Dsets)
+  Len_of_Dset=len(Dset)
+  Index=0
+  while (Index<Len_of_Dset):
+    GitBase=[]
+    Inidex=Dset[Index]
+    GitBase=Inidex.split()
+    Goat=0
+    Len_of_GitBase=len(GitBase)
+    GitFloat=[]
+    while (Goat<Len_of_GitBase):
+      R=GitBase[Goat]
+      O=float(R)
+      GitFloat.append(O)
+      Goat=Goat+1
+    AB=GitFloat[0]
+    CD=GitFloat[1]
+    EF=CD/AB
+    GH=EF-1
+    GitChub.append(GH)
+    Index=Index+1
+Clean_and_Data_Yahoo_Finance_File_In_Loop(Apple, "Apple_Stock_Data.txt")
