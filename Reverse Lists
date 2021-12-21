@@ -1,0 +1,21 @@
+Lispington=[1, 2, 3, 4, 5]
+def Reverse_List(List):
+  Len_List=len(List)
+  L_List=Len_List-1
+  USD=0
+  D_List=[]
+  while (USD<Len_List):
+    G_List=List[L_List]
+    D_List.append(G_List)
+    L_List=L_List-1
+    Len_List=Len_List-1
+  List.clear()
+  Len_D_List=len(D_List)
+  L_D_List=Len_D_List-1
+  D_USD=0
+  while (D_USD<Len_D_List):
+    G_D_List=D_List[D_USD]
+    List.append(G_D_List)
+    D_USD=D_USD+1
+  print (List)
+Reverse_List(Lispington)
