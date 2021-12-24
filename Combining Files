@@ -32,4 +32,4 @@ def File_Builder(Final_File, First_File, Second_File):
 		Data.write("\n")
 		fed=fed+1
 	Data.close
-File_Builder("Apple_Stock_Data.txt", "AP1.txt", "AP2.txt")
+File_Builder("/Users/shantanu/Documents/Python/Stocks/Yahoo_Finance_Stock/Data/Final_Data/Apple_Stock_Data.txt", "/Users/shantanu/Documents/Python/Stocks/Yahoo_Finance_Stock/Data/Pre_Data/AP1.txt", "/Users/shantanu/Documents/Python/Stocks/Yahoo_Finance_Stock/Data/Pre_Data/AP2.txt")
