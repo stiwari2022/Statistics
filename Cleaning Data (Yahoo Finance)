@@ -58,4 +58,4 @@ def Clean_and_Data_Yahoo_Finance_File_In_Loop(GitChub, If_Loop):
     IJ=GH*100
     GitChub.append(IJ)
     Index=Index+1
-Clean_and_Data_Yahoo_Finance_File_In_Loop(Apple, "Apple_Stock_Data.txt")
+Clean_and_Data_Yahoo_Finance_File_In_Loop(Apple, "/Users/shantanu/Documents/Python/Stocks/Yahoo_Finance_Stock/Data/Final_Data/Apple_Stock_Data.txt")
