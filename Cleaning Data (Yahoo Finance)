@@ -1,4 +1,6 @@
 Apple=[]
+
+
 def Clean_and_Data_Yahoo_Finance_File_In_Loop(GitChub, If_Loop):
   Break_And_Continue=[]
   Data=open(If_Loop)
