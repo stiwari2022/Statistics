@@ -33,7 +33,7 @@ def One_Dimensional_Clustering(Data, Number_Of_Clusters):
           Data_Data=[]
           Counter_1=0
           while (Counter_1<Number_Of_Clusters):
-            Points=random.randint(One_Hundred_Min_Data, One_Hundred_Max_Data)
+            Points=random.uniform(One_Hundred_Min_Data, One_Hundred_Max_Data)
             Data_Data.append(Points)
             Counter_1=Counter_1+1
           Transferer=[]
