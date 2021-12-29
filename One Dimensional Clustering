@@ -1,0 +1,195 @@
+import random
+import matplotlib.pyplot as plt
+fig=plt.figure(figsize=(13, 5))
+
+
+Data=[1, 2, 3, 11, 12, 13, 21, 22, 23]
+Number_Of_Clusters=3
+
+
+
+
+
+Number_Of_Trials=1000
+Giga_List=[]
+Colours=["blue", "green", "red", "cyan", "yellow", "purple", "orange", "navy", "teal", "gold", "peru"]
+def Full():
+  def One():
+    def Redid():
+      def Redo():
+        global Big_List
+        global Y_Data
+        From_Beginning_To_End=[]
+        BE_Count=0
+        while (BE_Count<Number_Of_Clusters):
+          From_Beginning_To_End.append(BE_Count)
+          BE_Count=BE_Count+1
+        Big_List=[]
+        Y_Data=[]
+        Len_Data=len(Data)
+        Counter=0
+        while (Counter<Len_Data):
+          Y_Data.append(1)
+          Counter=Counter+1
+        One_Hundred_Max_Data=(max(Data))*100
+        One_Hundred_Min_Data=(min(Data))*100
+        Data_Data=[]
+        Counter_1=0
+        while (Counter_1<Number_Of_Clusters):
+          Points=random.randint(One_Hundred_Min_Data, One_Hundred_Max_Data)
+          Data_Data.append(Points)
+          Counter_1=Counter_1+1
+        Transferer=[]
+        Counter_2=0
+        Len_Data_Data=len(Data_Data)
+        while (Counter_2<Len_Data_Data):
+          Index_Data_Data=Data_Data[Counter_2]
+          Transferer.append(Index_Data_Data/100)
+          Counter_2=Counter_2+1
+        Counter_3=0
+        Data_Data.clear()
+        while (Counter_3<Len_Data_Data):
+          Index_Of_Transferer=Transferer[Counter_3]
+          Data_Data.append(Index_Of_Transferer)
+          Counter_3=Counter_3+1
+        Index_List=[]
+        Len_Data=len(Data)
+        Len_Data_Data=len(Data_Data)
+        Counter_4=0
+        while (Counter_4<Len_Data):
+          Counter_5=0
+          Listing=[]
+          Data_Index=Data[Counter_4]
+          while (Counter_5<Len_Data_Data):
+            Index_Data_Data=Data_Data[Counter_5]
+            Difference=abs(Index_Data_Data-Data_Index)
+            Listing.append(Difference)
+            Counter_5=Counter_5+1
+          Min_Of_Listing=min(Listing)
+          Counter_6=0
+          Len_Listing=len(Listing)
+          while (Counter_6<Len_Listing):
+            if (Listing[Counter_6]==Min_Of_Listing):
+              Index_List.append(Counter_6)
+            Counter_6=Counter_6+1
+          Counter_4=Counter_4+1
+        Counter_7=0
+        Len_Index_List=len(Index_List)
+        Len_From_Beginning_To_End=len(From_Beginning_To_End)
+        while (Counter_7<Len_From_Beginning_To_End):
+          Transfer=[]
+          Counter_8=0
+          while (Counter_8<Len_Index_List):
+            Iodex=Index_List[Counter_8]
+            IData=Data[Counter_8]
+            if (Iodex==Counter_7):
+              Transfer.append(IData)
+            Counter_8=Counter_8+1
+          Big_List.append(Transfer)
+          Counter_7=Counter_7+1
+      Redo()
+      Counter_12=0
+      while (Counter_12<10):
+        Counter_11=0
+        Counter_10=0
+        while (Counter_10<Number_Of_Clusters):
+          Index_Redo=Big_List[Counter_10]
+          Len_Index_Redo=len(Index_Redo)
+          if not (Len_Index_Redo==0):
+            Counter_11=Counter_11+1
+          Counter_10=Counter_10+1
+        if (Counter_11==Number_Of_Clusters):
+          break
+          continue
+          break
+        if not (Counter_11==Number_Of_Clusters):
+          Redo()
+        Counter_11=Counter_12+1
+    try:
+      Redid()
+    except:
+      try:
+        Redid()
+      except:
+        try:
+          Redid()
+        except:
+          try:
+            Redid()
+          except:
+            try:
+              Redid()
+            except:
+              try:
+                Redid()
+              except:
+                try:
+                  Redid()
+                except:
+                  try:
+                    Redid()
+                  except:
+                    try:
+                      Redid()
+                    except:
+                      try:
+                        Redid()
+                      except:
+                        Redid()
+  def Variance(Chubstering):
+    xed=len(Chubstering)
+    Mean=sum(Chubstering)/xed
+    Variance=sum((xor-Mean)**2 for xor in Chubstering)/xed
+    return Variance
+  One()
+  TV=[]
+  Total_Variance=0
+  Counter_13=0
+  while (Counter_13<Number_Of_Clusters):
+    Each_Big_List=Big_List[Counter_13]
+    Variance_Big_List=Variance(Each_Big_List)
+    Total_Variance=Total_Variance+Variance_Big_List
+    Counter_13=Counter_13+1
+  Big_List.append(Total_Variance)
+  Giga_List.append(Big_List)
+Final_Big_List=[]
+All_Variances=[]
+Big_Counter=0
+while (Big_Counter<Number_Of_Trials):
+  Full()
+  Big_Counter=Big_Counter+1
+Big_Counter_1=0
+while (Big_Counter_1<Number_Of_Trials):
+  IGiga_List=Giga_List[Big_Counter_1]
+  VI_Giga_List=IGiga_List[-1]
+  All_Variances.append(VI_Giga_List)
+  Big_Counter_1=Big_Counter_1+1
+Mall_Variances=min(All_Variances)
+Big_Counter_2=0
+while (Big_Counter_2<Number_Of_Trials):
+  Big_Counter_3=0
+  I2Giga_List=Giga_List[Big_Counter_2]
+  VI2_Giga_List=I2Giga_List[-1]
+  if (VI2_Giga_List==Mall_Variances):
+    while (Big_Counter_3<Number_Of_Clusters):
+      I2IGiga_List=I2Giga_List[Big_Counter_3]
+      Final_Big_List.append(I2IGiga_List)
+      Big_Counter_3=Big_Counter_3+1
+    break
+  Big_Counter_2=Big_Counter_2+1
+def Line_List(List, Listing):
+  Len_List=len(List)
+  List_Counter=0
+  while (List_Counter<Len_List):
+    Listing.append(1)
+    List_Counter=List_Counter+1
+Giga_Counter=0
+while (Giga_Counter<Number_Of_Clusters):
+  Listle=[]
+  Colour=Colours[Giga_Counter]
+  IFinal_Big_List=Final_Big_List[Giga_Counter]
+  Line_List(IFinal_Big_List, Listle)
+  plt.scatter(IFinal_Big_List, Listle, color=Colour)
+  Giga_Counter=Giga_Counter+1
+print (Final_Big_List)
+plt.show()
