@@ -9,7 +9,7 @@ Data_Set=[1, 2, 3, 11, 12, 13, 21, 22, 23]
 def One_Dimensional_Clustering(Data, Number_Of_Clusters):
   Number_Of_Trials=1000
   Giga_List=[]
-  Colours=["blue", "green", "red", "cyan", "yellow", "purple", "orange", "navy", "teal", "gold", "peru"]
+  Colours=["blue", "green", "red", "cyan", "yellow", "purple", "orange", "navy", "teal", "gold", "peru", "olive", "lime", "skyblue", "teal", "indigo", "darkgoldenrod", "maroon", "yellowgreen", "steelblue", "mediumslateblue", "palegreen", "darkviolet", "darkslategrey", "springgreen", "royalblue"]
   def Full():
     def One():
       def Redid():
