@@ -188,7 +188,6 @@ def One_Dimensional_Clustering(Data, Number_Of_Clusters):
     plt.scatter(IFinal_Big_List, Listle, color=Colour)
     Giga_Counter=Giga_Counter+1
   print (Final_Big_List)
-  print ("")
-  print ("")
+  print ("\n")
   plt.show()
 One_Dimensional_Clustering(Data_Set, 3)
