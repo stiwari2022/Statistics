@@ -98,7 +98,6 @@ def One_Dimensional_Clustering(Data, Number_Of_Clusters):
           if (Counter_11==Number_Of_Clusters):
             break
             continue
-            break
           if not (Counter_11==Number_Of_Clusters):
             Redo()
           Counter_11=Counter_12+1
