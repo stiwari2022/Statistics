@@ -100,7 +100,7 @@ def One_Dimensional_Clustering(Data, Number_Of_Clusters):
             continue
           if not (Counter_11==Number_Of_Clusters):
             Redo()
-          Counter_11=Counter_12+1
+          Counter_12=Counter_12+1
       try:
         Redid()
       except:
