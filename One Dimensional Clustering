@@ -86,7 +86,7 @@ def One_Dimensional_Clustering(Data, Number_Of_Clusters):
             Counter_7=Counter_7+1
         Redo()
         Counter_12=0
-        while (Counter_12<10):
+        while (Counter_12<1000000):
           Counter_11=0
           Counter_10=0
           while (Counter_10<Number_Of_Clusters):
