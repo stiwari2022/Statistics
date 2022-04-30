@@ -8,4 +8,3 @@ def Collect_Last_Values(List, Test, Last):
     Test.append(List[C_2])
     C_1=C_1+1
 Collect_Last_Values(List, Testing, 5)
-print (Testing)
