@@ -1,12 +1,11 @@
 List=[2, 2, 1, 1, 1, 1, 1]
-def Collect_Last_Values(List, Last):
-  global Test
-  Test=[]
+Testing=[]
+def Collect_Last_Values(List, Test, Last):
   C_1=0
   C_2=0
   while (C_1<Last):
     C_2=C_2-1
     Test.append(List[C_2])
     C_1=C_1+1
-Collect_Last_Values(List, 5)
-print (Test)
+Collect_Last_Values(List, Testing, 5)
+print (Testing)
