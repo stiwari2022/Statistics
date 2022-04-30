@@ -7,4 +7,4 @@ def Collect_Last_Values(List, Test, Last):
     C_2=C_2-1
     Test.append(List[C_2])
     C_1=C_1+1
-Collect_Last_Values(List, Testing, 5)
+Collect_Last_Values(List, Testing, 3)
