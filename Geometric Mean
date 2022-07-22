@@ -1,0 +1,14 @@
+def Geometric_Mean(Data):
+  LData=len(Data)
+  C=1
+  if (LData==0):
+    return 0
+  if (LData==1):
+    return Data[0]
+  if (LData>1):
+    GM=Data[0]
+    while (C<LData):
+      GM=GM*Data[C]
+      C=C+1
+    GM=GM**(1/LData)
+    return GM
