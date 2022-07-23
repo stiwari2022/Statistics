@@ -1,0 +1,30 @@
+def Mean(Data):
+  return sum(Data)/len(Data)
+
+def Geometric_Mean(Data):
+  LData=len(Data)
+  C=1
+  if (LData==0):
+    return 0
+  if (LData==1):
+    return Data[0]
+  if (LData>1):
+    GM=Data[0]
+    while (C<LData):
+      GM=GM*Data[C]
+      C=C+1
+    GM=GM**(1/LData)
+    return GM
+
+def Harmonic_Mean(Data):
+  LData=len(Data)
+  C=0
+  HM=0
+  while (C<LData):
+    HM=HM+1/Data[C]
+    C=C+1
+  HM=LData/HM
+  return HM
+
+def TAVG(Data):
+  return Mean(Data)*Geometric_Mean(Data)*Harmonic_Mean(Data)

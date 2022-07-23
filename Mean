@@ -1,2 +1,0 @@
-def Mean(AND_and_OR):
-  return sum(AND_and_OR)/len(AND_and_OR)
