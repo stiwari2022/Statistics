@@ -1,6 +1,11 @@
-def Standard_Deviation(Chubstering):
-  xed=len(Chubstering)
-  Mean=sum(Chubstering)/xed
-  v=sum((xor-Mean)**2 for xor in Chubstering)/xed
-  Dev=v**0.5
-  return Dev
+def Standard_Deviation(Data):
+  LData=len(Data)
+  C=0
+  HM=0
+  while (C<LData):
+    HM=HM+1/Data[C]
+    C=C+1
+  HM=LData/HM
+  V=sum((XOR-HM)**2 for XOR in Data)/LData
+  SD=round(V**0.5, 3)
+  return SD
