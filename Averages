@@ -27,4 +27,4 @@ def Harmonic_Mean(Data):
   return HM
 
 def TAVG(Data):
-  return Mean(Data)*Geometric_Mean(Data)*Harmonic_Mean(Data)
+  return Mean(Data)*Geometric_Mean(Data)*Harmonic_Mean(Data)/3
