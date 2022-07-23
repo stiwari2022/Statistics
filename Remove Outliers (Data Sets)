@@ -36,7 +36,7 @@ def Removing_Outliers(Data, EL):
     if (N>Max or N<Min):
       EL.append(C)
     C=C+1
-  
+
   #Removing the outliers
   LEL=len(EL)
   C=0
