@@ -1,0 +1,19 @@
+def Pearson_Correlation(Data1, Data2):
+  LData1=len(Data1)
+  LData2=len(Data2)
+  if (LData1!=LData2):
+    return "Null"
+  MData1=Mean(Data1)
+  MData2=Mean(Data2)
+  TD=0
+  TDS1=0
+  TDS2=0
+  C=0
+  while (C<LData1):
+    TD1=Data1[C]-MData1
+    TD2=Data2[C]-MData2
+    TD=TD+TD1*TD2
+    TDS1=TDS1+(TD1**2)
+    TDS2=TDS2+(TD2**2)
+    C=C+1
+  return TD/((TDS1*TDS2)**0.5)
