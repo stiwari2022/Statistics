@@ -1,36 +1,45 @@
-Lisp=[1, 3, 5, 7, 100]
+def Harmonic_Mean(Data):
+  LData=len(Data)
+  C=0
+  HM=0
+  while (C<LData):
+    HM=HM+1/Data[C]
+    C=C+1
+  HM=LData/HM
+  return HM
 
+def Standard_Deviation(Data):
+  LData=len(Data)
+  C=0
+  HM=0
+  while (C<LData):
+    HM=HM+1/Data[C]
+    C=C+1
+  HM=LData/HM
+  V=sum((XOR-HM)**2 for XOR in Data)/LData
+  SD=round(V**0.5, 3)
+  return SD
 
+def Removing_Outliers(Data, EL):
+  MData=Harmonic_Mean(Data)
+  SData=Standard_Deviation(Data)
+  Up=MData+SData*2
+  Down=MData-SData*2
+  Max=max(Up, Down)
+  Min=min(Up, Down)
 
-
-
-
-
-def Removing_Outliers(Chubstering):
-  def Medianing(Chubstering):
-      feed=len(Chubstering)//2
-      return (Chubstering[feed]+Chubstering[~feed])/2
-  def IQR_Standard_Deviation(Chubstering):
-    need=len(Chubstering)
-    meed=Medianing(Chubstering)
-    deed=[(leed-meed)**2 for leed in Chubstering]
-    Variance=sum(deed)/need
-    iDev=Variance**0.5
-    return iDev
-  Median=Medianing(Chubstering)
-  iSD=IQR_Standard_Deviation(Chubstering)
-  zeed=0
-  xeed=len(Chubstering)
-  beed=Median+iSD*2
-  ceed=Median-iSD*2
-  meep=len(Chubstering)-1
-  while (zeed<=xeed):
-    if (zeed==len(Chubstering)):
-      break
-    yeed=Chubstering[zeed-meep]
-    if (yeed>beed):
-      Chubstering.remove(yeed)
-    if (yeed<ceed):
-      Chubstering.remove(yeed)
-    zeed=zeed+1
-Removing_Outliers(Lisp)
+  #Placing the index of the outliers in EL
+  LData=len(Data)
+  C=0
+  while (C<LData):
+    N=Data[C]
+    if (N>Max or N<Min):
+      EL.append(C)
+    C=C+1
+  
+  #Removing the outliers
+  LEL=len(EL)
+  C=0
+  while (C<LEL):
+    Data.remove(Data[EL[C]-C])
+    C=C+1
