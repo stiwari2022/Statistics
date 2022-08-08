@@ -1,3 +1,13 @@
+def Harmonic_Mean(Data):
+  LData=len(Data)
+  C=0
+  HM=0
+  while (C<LData):
+    HM=HM+1/Data[C]
+    C=C+1
+  HM=LData/HM
+  return HM
+
 def Pearson_Correlation(Data1, Data2):
   LData1=len(Data1)
   LData2=len(Data2)
