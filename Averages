@@ -1,5 +1,11 @@
 def Mean(Data):
-  return sum(Data)/len(Data)
+  Total=0
+  C=0
+  LData=len(Data)
+  while (C<LData):
+    Total=Total+Data[C]
+    C=C+1
+  return (Total/LData)
 
 def Geometric_Mean(Data):
   LData=len(Data)
