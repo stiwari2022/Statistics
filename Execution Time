@@ -14,9 +14,9 @@ def Execution_Time(Trials):
   while (C<Trials):
     Start=time.process_time()
     # Start
-    sum_x = 0
-    for i in range(1000000):
-      sum_x += i
+
+
+
     # End
     End=time.process_time()
     Time=End-Start
