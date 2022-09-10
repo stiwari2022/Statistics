@@ -1,0 +1,23 @@
+def Bubble_Sort(List):
+  def SwapInList(Lisp, One, Two):
+      Lisp[One], Lisp[Two]=Lisp[Two], Lisp[One]
+  def IsItSorted(Lisp):
+    Mistakes=True
+    C=1
+    LLisp=len(Lisp)
+    while (C<LLisp):
+      if (Lisp[C]<Lisp[C-1]):
+        Mistakes=False
+      C=C+1
+    return Mistakes
+  LList=len(List)
+  Check=IsItSorted(List)
+  while (Check==False):
+    C=0
+    while (C<LList-1):
+      First=List[C]
+      Second=List[C+1]
+      if (First>Second):
+        SwapInList(List, C, (C+1))
+      C=C+1
+    Check=IsItSorted(List)
