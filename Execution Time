@@ -12,13 +12,13 @@ def Execution_Time(Trials):
   Lisp=[]
   C=0
   while (C<Trials):
-    Start=time.time()
+    Start=time.process_time()
     # Start
 
 
 
     # End
-    End=time.time()
+    End=time.process_time()
     Time=End-Start
     Lisp.append(Time)
     C=C+1
