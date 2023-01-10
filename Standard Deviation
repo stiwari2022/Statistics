@@ -1,1 +1,1 @@
-Standard_Deviation=lambda List: 0 if len(List)==0 else  (List[0] if len(List)==1 else (sum([(x - sum(List)/len(List)) ** 2 for x in List])/(len(List)))**(1/2))
+Standard_Deviation=lambda List: 0 if len(List)==0 else  (List[0] if len(List)==1 else (sum([(x-sum(List)/len(List))**2 for x in List])/(len(List)))**(1/2))
