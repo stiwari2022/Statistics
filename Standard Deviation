@@ -1,11 +1,1 @@
-def Standard_Deviation(Data):
-  LData=len(Data)
-  C=0
-  HM=0
-  while (C<LData):
-    HM=HM+1/Data[C]
-    C=C+1
-  HM=LData/HM
-  V=sum((XOR-HM)**2 for XOR in Data)/LData
-  SD=round(V**0.5, 3)
-  return SD
+Standard_Deviation=lambda List: 0 if len(List)==0 else  (List[0] if len(List)==1 else (sum([(x - sum(List)/len(List)) ** 2 for x in List])/(len(List)))**(1/2))
